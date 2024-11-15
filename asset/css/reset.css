@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0 ;
+}
+address {
+    font-style: normal;
+}
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+em {
+    font-style: normal;
+    font-weight: normal;
+}
