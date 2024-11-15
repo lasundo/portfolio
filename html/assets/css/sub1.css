@@ -1,0 +1,501 @@
+.section01_inner .title_wrap{
+    margin-top: 8.9rem;
+}
+/* 일정 */
+.container{
+    height: auto;
+}
+.schedule{
+    margin-top: 6.2rem;
+}
+
+.schedule h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.schedule .sub_title_wrap{
+    border-bottom: 1px solid var(--grayscale-950);
+    margin-bottom: 4.2rem;
+}
+
+.schedule .sub_title_wrap .date{
+    display: flex;
+    height: 5.1rem;
+    padding-top: 16.7rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    gap: 2.4rem;
+}
+
+.schedule .sub_title_wrap .date p{
+    padding-top: 0.6rem;
+}
+
+.schedule .sub_title_wrap .btn_wrap{
+    display: flex;
+    width: 35.7rem;
+    height: 5.6rem;
+    gap: 2.1rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 4.1rem;
+
+}
+
+.schedule .sub_title_wrap .btn_position{
+    display: flex;
+    justify-content: center;
+}
+
+.schedule .sub_title_wrap .btn_wrap .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.8rem;
+    border: 1px solid var(--grayscale-950);
+    cursor: pointer;
+    gap: 1rem;
+}
+
+
+.schedule .list_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.schedule .list_wrap .list_item{
+    margin-bottom: 21.9rem;
+    width: 31.25%;
+}
+
+.schedule .list_wrap .bottom{margin-bottom: 11.7rem;}
+
+.schedule .list_wrap .list_item .text_ico_wrap{
+    margin-top: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule .list_wrap .list_item .text_ico_wrap .text p{
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 1.3rem 0 1.1rem;
+}
+
+.schedule .list_wrap .list_item .text_ico_wrap .text span{
+    color: var(--grayscale-400);
+}
+
+.schedule .list_wrap .list_item .text_ico_wrap .text h3{
+    font-size:3.2rem;
+    font-weight: 700;
+    margin-top: 4.6rem;
+}
+
+.mo_tab{display: none;}
+
+.schedule .list_wrap .list_item .text_ico_wrap .ico{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+}
+
+.pink{
+    background-color: #FF89CA;
+}
+
+.blue{
+    background-color: #7DD4FF;
+}
+
+.orange{
+    background-color: #FFB042;
+}
+
+.green{
+    background-color: #84E756;
+}
+
+.schedule .page_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.schedule .page{
+    display: flex;
+    justify-content: space-between;
+    width: 25.7rem;
+}
+
+.schedule .page .page_btn{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1.2rem 2rem;
+    color: var(--grayscale-400);
+}
+
+.schedule .page .page_btn.active {
+    color: #000; 
+}
+
+/* 캘린더 */
+.schedule .calender{
+    margin: 4.2rem 0 29.2rem;
+}
+.schedule .calender .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+}
+
+.schedule .calender .days .day {
+    font-weight: bold;
+    color: #333;
+}
+
+.schedule .calender .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.schedule .calender .dates .red,
+.schedule .calender .days .red{color: #FE1010}
+
+.schedule .calender .dates .date{
+    height: 20rem;
+    font-size: 2.4rem;
+    padding: 1.2rem 0 0 1.4rem;
+}
+
+.schedule .calender .dates .top{
+    border-top: 1px solid var(--grayscale-950);
+    border-bottom: 1px solid var(--grayscale-400);
+}
+
+.schedule .calender .dates .bottom{
+    border-bottom: 1px solid var(--grayscale-400);
+}
+
+.schedule .calender .dates .borderBlack{
+    border-bottom: 1px solid var(--grayscale-950);
+}
+
+.schedule .calender .dates .date .event .ico_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+
+.schedule .calender .dates .date .event .ico{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding-top: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+.schedule .calender .dates .date .event{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.schedule .calender .dates .date .event .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.schedule .calender .dates .date .event .text .break_mo{
+    display: none;
+}
+
+.schedule .calender .dates .date .event .text h3{
+    padding: 0 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #000;
+    transition: 0.2s;
+}
+/* 미디어 쿼리에서 클릭시 나타날 폰트 사이즈 */
+.show{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/*  제목이 나타날 영역 */
+.schedule .visible{
+    width: 100%;
+    height: 9rem;
+    margin-top: 1.8rem;
+}
+
+/* 제이쿼리를 위한 스타일 */
+.list_wrap {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .section01_inner > .title_wrap h3{
+        font-size: 4rem;
+    }  
+
+    .title_wrap .title_under_wrap p{
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text p{
+        font-size: 1.8rem;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text h3{
+        font-size: 2rem;
+    }
+
+    .schedule .calender .days{
+        font-size: 2rem;
+    }
+
+    .schedule .calender .dates .date{
+        font-size: 2rem;
+    }
+
+    .schedule .calender .dates .date .event .text .break_mo{
+        display: block;
+    }
+
+    .schedule .calender .dates .date .event .text .on{
+        display: none;
+    }
+
+    .schedule .calender .dates .date .event .text h3{
+        font-size: 1.4rem;
+        padding-left: 0.7rem;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+    /* 제이쿼리를 위한 스타일 */
+    .schedule .calender .dates .date .event .text h3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .schedule .sub_title_wrap .date{
+        width: 29rem;
+        margin: 0 auto;
+        padding-top: 6rem;
+        
+    }
+
+    .schedule .sub_title_wrap .btn_wrap{
+        margin-top: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 2rem;
+    }
+   .section01_inner > .title_wrap{
+    margin-top: 6.9rem;
+    height: auto;
+   }
+
+   .section01_inner > .title_wrap img.bg{
+        height: 21rem;
+   }
+
+    .section01_inner > .title_wrap .title_under_wrap p{display: none;}
+
+   .schedule .sub_title_wrap{
+        flex-wrap: wrap;
+   }
+
+   .schedule .sub_title_wrap .date{
+        padding-top: 7rem;
+        gap: 0;
+        margin: 0 auto;
+        justify-content: center;
+   }
+
+   .schedule .sub_title_wrap .btn_wrap{
+        margin-top: 7rem;
+   }
+
+   .schedule .list_wrap .list_item{
+        width: 48%;
+        margin-bottom: 10rem;
+   }
+
+   .schedule .list_wrap .bottom:nth-child(9),
+   .schedule .list_wrap .bottom:nth-child(16){
+        margin-bottom: 7rem;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text p{
+        font-size: 2rem;
+        margin: 2rem 0 1.5rem;
+    }
+
+    .schedule .calender .dates .date .event .text .break_mo{
+        display: block;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text h3{
+        font-size: 2.3rem;
+    }
+   
+    .schedule .list_wrap .list_item .text_ico_wrap .ico{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .mo_tab{display: block;}
+
+    /* 캘린더 */
+    .schedule .calender::after{
+        content:"";
+        display: block;
+        width: 100%;
+        background-color: var(--grayscale-400);
+    }
+
+    .schedule .calender .days{
+        font-size: 2.4rem;
+    }
+
+    .schedule .calender .dates .date{
+        height: 10rem;
+        padding: 1.2rem 0 0 1rem;
+        font-size:1.6rem;
+    }
+
+    .schedule .calender .dates .date .event .ico_wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .on{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 430px){
+    .section01_inner > .title_wrap .title_under_wrap p{display: none;}
+
+    .section01_inner > .title_wrap .title_under_wrap h3{
+        margin-bottom: 0.7rem;
+        font-size: 3.6rem;
+    }
+
+    .section01_inner > .title_wrap .title_under_wrap .title_badge{
+        width: 19.1rem;
+        height: 2.6rem;
+    }
+    
+    .section01_inner > .title_wrap .title_under_wrap .title_badge a{
+        font-size: 1.2rem;
+    }
+
+    .section01_inner > .title_wrap img.bg{
+        height: 21rem;
+    }
+
+    .schedule{
+        margin-top: 3rem;
+    }
+
+    .schedule .sub_title_wrap .date{
+        padding-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .schedule .sub_title_wrap .btn_wrap{
+        width: 30.2rem;
+        height: 4.9rem;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+
+    .schedule .sub_title_wrap .btn_wrap img{
+        width: 2.1rem;
+    }
+
+    .schedule .sub_title_wrap .date button{
+        width: 5.1rem;
+    }
+
+    .schedule .sub_title_wrap .date p{
+        padding-top: 0;
+    }    
+
+    .schedule .list_wrap .list_item{
+        margin-bottom: 6rem;
+    }
+
+    .schedule .list_wrap .list_item:nth-child(9), .schedule .list_wrap .bottom:nth-child(16){
+        margin-bottom: 3rem;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text p{
+        margin: 0.6rem 0 2.3rem;
+        font-size: 1.6rem;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text p:first-child{
+        white-space: nowrap; 
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .text h3{
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+
+    .schedule .list_wrap .list_item .text_ico_wrap .ico{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    /* 캘린더 */
+    .schedule .calender .days{
+        font-size: 1.6rem;
+    }
+
+    .schedule .calender .dates .date{
+        font-size: 1.6rem;
+        height: 7.3rem;
+        padding: 1.2rem 0 0 0.7rem;
+    }
+
+    .schedule .calender .dates .date .event .ico_wrap{
+        gap: 0.6rem;
+    }
+}
+
+
+
+

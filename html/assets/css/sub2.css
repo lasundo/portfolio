@@ -1,0 +1,250 @@
+.section01_inner .title_wrap{
+    margin-top: 8.9rem;
+}
+/* 뱃지 */
+.title_under_wrap .title_badge{
+    width: 17.4rem;
+}
+/* 페스티벌 리스트 */
+.container{
+    height: auto;
+    margin-bottom: 5.9rem;
+}
+
+.container:last-child{
+    margin-bottom: 0;
+}
+
+.festival .container:first-of-type{
+    margin-top: 28rem;
+}
+
+.festival .container .festival_list_wrap{
+    border-bottom: 1px solid #000;
+    /* overflow: hidden; */
+}
+
+.festival .container .festival_list_wrap .festival_list{
+    padding-bottom: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.festival .container .festival_list_wrap .festival_list .text_ico_wrap h2{
+    font-size: 3.2rem;
+    padding-bottom: 6.1rem;
+}
+
+.festival .container .festival_list_wrap .festival_list .text_ico_wrap p{
+    font-size: 2rem;
+    padding-bottom: 15.6rem;
+}
+
+.festival .container .festival_list_wrap .festival_list .text_ico_wrap .ico{
+    padding-left: 1.1rem;
+}
+
+.festival .container .festival_list_wrap .festival_list .img_wrap{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.festival .container .festival_list_wrap .festival_list .img_wrap img{
+    width: 47.8%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 클릭시 나오는 콘텐츠 */
+.festival .list_content{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 64rem;
+}
+
+.festival .list_content p{
+    margin-bottom: 2.9rem;
+}
+
+.festival .list_content .list_title{
+    color: var(--grayscale-400);
+}
+
+.festival .list_content .list_item{
+    margin-left: 8.1rem;
+    color: var(--grayscale-950);
+}
+
+.festival .list_content .list_item .break_mo{
+    display: none;
+}
+
+.festival .list_content .list_item .click{
+    margin-bottom: 7.4rem;
+    cursor: pointer;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 1900px){
+    .pc{display: none;}
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap{
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 1610px) {
+    .festival .list_content{
+        margin-left: 57rem;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .festival .list_content{
+        margin-left: 53rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .festival .list_content{
+        margin-left: 50rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .festival .list_content{
+        margin-left: 45rem;
+    }
+}
+
+@media screen and (max-width: 1229px) {
+    .festival .list_content{
+        margin-left: 42rem;
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    .festival .container:first-of-type{
+        margin-top: 20rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list{
+        flex-direction: column;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .img_wrap{
+        margin: 2rem 0 0 0;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap{
+        max-width: 100%;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap h2{
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap p{
+        padding-bottom: 5rem;
+    }
+
+    .festival .list_content{
+        margin-left: 9rem;
+    }
+
+    .festival .list_content .list_item .click{
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section01_inner > .title_wrap{
+        margin-top: 6.9rem;
+    }
+
+    .festival .container:first-of-type{
+        margin-top: 15rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap{
+        margin-bottom: 2rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .img_wrap{
+        margin-left: 0;
+    }
+
+    .festival .list_content{
+        margin-left: 0;
+    }
+
+    .festival .list_content .list_item .break_mo{display: block;}
+}
+
+@media screen and (max-width: 430px){
+    .pc{display: block;}
+
+    .section01_inner > .title_wrap .title_under_wrap .title_badge{
+        width: 14rem;
+    }
+
+    .festival .container:first-of-type{
+        margin: 5.5rem 0;
+    }
+
+    .festival .container .festival_list_wrap .festival_list{
+        padding-bottom: 2rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap h2{
+        font-size: 2.4rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap p{
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .text_ico_wrap .ico{
+        padding-left: 0;
+        width: 4.2rem;
+    }
+
+    .festival .container .festival_list_wrap .festival_list .img_wrap img{
+        width: 16.5rem;   
+    }
+
+    .festival .container .festival_list_wrap .festival_list .img_wrap img:first-child{
+        margin-right: 2rem;
+    }
+
+    .festival .list_content p{
+        font-size: 1.6rem;
+    }
+
+    .festival .list_content p{
+        margin-bottom: 1.5rem;
+    }
+
+    .festival .list_content p.bottom{
+        margin-bottom: 3.5rem;
+    }
+
+    .festival .list_content .list_item{
+        margin-left: 3.1rem;
+    }
+
+    .festival .list_content .list_item .click{
+        margin-bottom: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width: 429px){
+    .pc{display: none;}
+}
