@@ -1,0 +1,381 @@
+/* 공통 */
+section {
+
+    margin-top: 6rem;
+}
+.section01 {
+    margin-top: 8.9rem;
+}
+.container {
+    padding: 0 6rem;
+    height: 100%;
+
+}
+
+.tab_menu > ul {
+    padding-top: 8rem;
+}
+
+
+/* 섹션02 --- 운영목표 탭메뉴 */
+.section02_inner h3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.board_area {
+    margin-top: 11.5rem;
+}
+.tab_btn {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6rem;
+}
+
+.tab_btn a {
+    padding: 1.2rem;
+}
+.tab_btn ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tab_btn ul li {
+    text-align: center;
+    box-sizing: border-box;
+    
+    transition: all 0.3s;
+    font-size: 2.4rem;
+    background-color: var(--grayscale-50);
+    color: var(--grayscale-500);
+}
+
+.tab_menu a {
+    display: block;
+    transition: all 0.5s;
+}
+.tab_btn ul li.active {
+    color: white;
+    background-color: var(--grayscale-950);
+}
+
+@media screen and (max-width: 500px) {
+    .tab_btn ul li {
+        font-size: 1.6rem;
+    }
+}
+/* 탭1 운영목표 탭*/
+.tab1 h3 {
+    margin-bottom: 4rem;
+}
+.tab1 .text_box_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.tab1 .text_box {
+    width: 80rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.4rem;
+    text-align: center;
+}
+.tab1 .text_box.box1 {
+    background-color: var(--primary-600);
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+}
+.tab1 .text_box.box2 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding: 2rem 5.7rem;
+}
+
+.tab1 .img_col_wrap {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+@media screen and (max-width:768px) {
+    .section01 {
+        margin-top: 6.9rem;
+    }
+    .container {
+        padding: 0 2rem;
+    }
+
+    .section02_inner h3 {
+        text-align: left;
+    }
+    .tab1 .text_box {
+        width: 100%;
+        border-radius: 0.8rem;
+    }
+    .tab1 .text_box.box1 {
+        height: 4rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .tab1 .text_box.box2 {
+        font-weight: 400;
+        padding: 0.8rem;
+        height: auto;
+    }
+
+    .tab1 .img_col_wrap {
+        gap: 3.5rem;
+    }
+    .board_area {
+        margin-top: 2rem;
+    }
+    .page_btn_wrap {
+        margin-top: 2rem;
+    }
+}
+
+/* 탭2 윤리헌장 탭*/
+.tab2 .content_wrap {
+    margin: 10.3rem auto 0;
+    width: 83%;
+    
+}
+.tab2 .content_wrap span {
+    font-size: 2.4rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.tab2 .content_wrap .content_box {
+    margin-top: 8rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--grayscale-50);
+    border-radius: 2.4rem;
+    font-size: 2.4rem;
+    padding: 8rem;
+}
+.tab2 .content_wrap .content_box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.tab2 .content_wrap .content_box ul li {
+    display: flex;
+    gap: 3rem;
+}
+.tab2 .content_wrap .content_box ul li.space {
+    display: flex;
+    gap: 5rem;
+}
+.tab2 .content_wrap .content_box ul li em{
+    font-size: 2.4rem;
+    font-style: normal;
+    white-space: nowrap;
+    color: var(--grayscale-700);
+}
+.tab2 .content_wrap .content_box > p {
+    margin-top: 5rem;
+    text-align: right;
+}
+
+@media screen and (max-width:768px) {
+    .tab2 .content_wrap {
+        margin: 10.3rem auto 0;
+        width: 100%;
+    }
+    .tab2 .content_wrap span {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }    
+    .tab2 .content_wrap .content_box {
+        padding: 2rem 2rem 3rem 2rem;
+        border-radius: 0.8rem;
+        font-size: 2rem;
+    }
+    .tab2 .content_wrap .content_box ul li {
+        gap: 1.2rem;
+    }
+    .tab2 .content_wrap .content_box ul li em {
+        font-size: 2rem;
+    }
+    .tab2 .content_wrap .content_box ul li.space {
+        gap: 2.8rem
+    }
+    .mo_break {
+        display: none;
+    }
+}
+
+/* 탭3 인권경영 탭*/
+.tab3 > li {
+    padding-top: 8rem;
+}
+.tab3 .report_wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8rem 3.5rem;
+}
+.tab3 .report_box {
+    display: flex;
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9.5rem;
+    border: 1px solid var(--grayscale-950);
+}
+.tab3 .report_box span {
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+}
+.tab3 .report_box .down_box {
+    width: 20rem;
+    height: 5.7rem;
+    background-color: var(--grayscale-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .tab3 .report_wrap {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+    .tab3 .report_box {
+        height: 30rem;
+        gap: 5rem;
+    }
+    .tab3 .report_box span {
+        font-size: 2.4rem;
+    }
+    .tab3 .report_box .down_box p {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tab3 .report_wrap {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+    .tab3 .report_box {
+        height: 20rem;
+        gap: 2.4rem;
+    }
+    .tab3 .report_box span {
+        font-size: 2.2rem;
+    }
+    .tab3 .report_box .down_box p {
+        font-size: 2.2rem;
+    }
+}
+
+/* 탭4 안전보건경영 */
+.tab4 > li {
+    padding-top: 8rem;
+}
+.tab4 .paper_all_wrap {
+    width: 84%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1.62vw;
+    font-weight: 500;
+}
+.tab4 .paper_all_wrap_img {
+    width: 100%;
+    height: 100%;
+    padding: 7.3vw 0;
+    background-image: url(../img/paper-all-wrap.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.tab4 .paper_all_wrap .logo {
+    width: 100%;
+    margin-bottom: 2.08vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab4 .paper_all_wrap .logo img {
+    max-width: 17.12vw;
+}
+.tab4 .paper_all_wrap .title_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6vw;
+    text-align: center;
+    font-weight: 600;
+}
+.tab4 .paper_all_wrap .text{
+    margin: 2.6vw auto 4.86vw;
+    width: 81.33%;
+    text-align: center;
+    font-weight: 600;
+}
+.tab4 .paper_all_wrap ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.6vw;
+    text-align: center;
+}
+.tab4 .paper_all_wrap ul li{
+    list-style: decimal;
+    list-style-position: inside;
+}
+.tab4 .paper_all_wrap .date {
+    margin: 6.25vw auto 2.6vw;
+    text-align: center;
+}
+.tab4 .paper_all_wrap .last_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    
+}
+@media screen and (max-width: 1200px) {
+    .tab4 > li {
+        padding-top: 6rem;
+    }
+    .tab4 .paper_all_wrap {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .tab4 .paper_all_wrap_img {
+        background-image: none;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tab4 > li {
+        padding-top: 4rem;
+    }
+    .tab4 .paper_all_wrap {
+        font-size: 1.6rem;
+    }
+}
